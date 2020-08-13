@@ -59,9 +59,10 @@ while op==1:
 
             elif op1==4:
                 print('--------Available FLights---------')
-                print('\tID \t SOURCE \t DESTINATION \t DATE \t TAKEOFF \t CLASS \t AIRLINE \t VIA \t LANDING ')
                 source=int(input('Enter source id of airport where u want to check flights:'))
-                for row in avialable(source):
+                print('\tID \t SOURCE \t DESTINATION \t DATE \t TAKEOFF \t CLASS \t AIRLINE \t VIA \t LANDING ')
+
+                for row in available(source):
                     print('\t',row[0], '\t', row[1], '\t', row[2], '\t', row[3], '\t', row[4], '\t', row[5], '\t', row[6],'\t', row[7],' \t',row[8])
                     print('--------------------------------------------------------------------------------------------------------------------------')
 
